@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="allSnow.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Booking: All Snow</title>
+</head>
+    
+<body>
+<header>
+    <h1 id="allSnow">All Snow</h1>
+    <h2>Your first stop for all things snow!</h2>
+</header>
+    
+<nav>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="snowConditions.html">Snow Conditions</a></li>
+        <li><a href="resorts.html">Resorts</a></li>
+        <li class="active"><a href="booking.html">Booking</a></li>
+    </ul>
+    <div class="keepOpen"></div>
+</nav>
+    
+<main>
+    <h1>Booking</h1>
+    
+    <form action="thanks.html" method="POST" enctype="multipart/form-data" name="book" class="booking"> 
+    
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required></label>
+            <br>
+            <label><span>Email: </span><input type="email" name="email" placeholder="email@email.com"></label>
+            <br>
+            <label><span>Address: </span><input type="text" name="address" placeholder="123 Adam St" required></label>
+            <br>
+            <label><span>State: </span>
+                <select>
+                    <option>select one</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option> Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>MontanaNebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>PennsylvaniaRhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+                </select>
+            <br>
+            <label><span>Zip Code: </span><input type="number" name="zip" placeholder="zip code" required></label>
+            <br>
+            <label><span>Phone: </span><input type="tel" name="phone" placeholder="123-456-7890" required pattern="[0-9.]{10,14}"></label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Info</legend>
+
+            <label><span>Resort: </span><input type="text" name="resort" placeholder="resort name" required></label>
+            <br>
+            <label><span>Number of Guests: </span><input type="number" name="guests" placeholder="" min="0" max="50" required></label>
+            
+            <br>
+            <label><span>Days Visiting: </span><input type="number" name="address" placeholder="" required></label>
+            <br>
+        </fieldset>
+
+
+        <input type="submit" name="submit" >
+    </form>
+    
+</main>
+    
+<footer>
+    <p>&copy; 2020 &bull; Michelle W Design &bull; Built by Michelle Wert</p>
+</footer>
+</body>
+</html>
