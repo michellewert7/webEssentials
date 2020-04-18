@@ -211,6 +211,51 @@ figure.resorts figcaption span {
     color: #6B7D82;
 }
 
+/* form styling */
+
+form.booking fieldset {
+    padding: 16px;
+    border-radius: 10px;
+    border: solid 1.5px #6B7D82;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+form.booking legend {
+    font-weight: 600;
+    margin-left: 24px;
+}
+
+form.booking span {
+    display: block;
+    padding: .8rem 0 0 .3rem;
+    color: #6B7D82;
+}
+
+form.booking .userInfo {
+    width: 40%;
+    border-radius: 10px;
+    border: solid 1px #B9C9D4;
+    padding: .4rem;
+}
+
+form.booking ::placeholder {
+    color: #B9C9D4;
+    opacity: 50%;
+}
+
+form.booking .bookButton {
+    width: 20rem;
+    padding: .8rem;
+    margin-left: 2%;
+    background: #9EB59D;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
 /* footer */
 
 footer {

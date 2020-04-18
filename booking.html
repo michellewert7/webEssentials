@@ -30,14 +30,14 @@
     
         <fieldset>
             <legend>Personal Info</legend>
-            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required></label>
+            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required class="userInfo"></label>
             <br>
-            <label><span>Email: </span><input type="email" name="email" placeholder="email@email.com"></label>
+            <label><span>Email: </span><input type="email" name="email" placeholder="email@email.com" class="userInfo"></label>
             <br>
-            <label><span>Address: </span><input type="text" name="address" placeholder="123 Adam St" required></label>
+            <label><span>Address: </span><input type="text" name="address" placeholder="123 Adam St" required class="userInfo"></label>
             <br>
             <label><span>State: </span>
-                <select>
+                <select class="userInfo">
                     <option>select one</option>
                     <option>Alabama</option>
                     <option>Alaska</option>
@@ -89,26 +89,57 @@
                     <option>Wyoming</option>
                 </select>
             <br>
-            <label><span>Zip Code: </span><input type="number" name="zip" placeholder="zip code" required></label>
+            <label><span>Zip Code: </span><input type="number" name="zip" placeholder="zip code" required class="userInfo"></label>
             <br>
-            <label><span>Phone: </span><input type="tel" name="phone" placeholder="123-456-7890" required pattern="[0-9.]{10,14}"></label>
+            <label><span>Phone: </span><input type="tel" name="phone" placeholder="123-456-7890" required pattern="[0-9.]{10,14}" class="userInfo"></label>
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your Trip</legend>
+
+            <label><span>Resort: </span><input type="text" name="resort" placeholder="resort name" required class="userInfo"></label>
+            <br>
+            <label><span>Number of Guests: </span><input type="number" name="guests" required class="userInfo"></label>
+            <br>
+            <label><span>Arrival Date: </span><input type="date" name="date"  required class="userInfo"></label>
+            <br>
+            <label><span>Departure Date: </span><input type="date" name="date" required class="userInfo"></label>
+            <br>
+            <span>Select activities of interest: </span>
+                <label></label><input type="checkbox" name="downhill" > Downhill Skiing</label>
+                <br>
+                <label></label><input type="checkbox" name="sledding" > Sledding</label>
+                <br>
+                <label></label><input type="checkbox" name="park"> Terrain Park</label>
+                <br>
+                <label></label><input type="checkbox" name="lessons"> Ski/Board Lessons</label>
+                <br>
+                <label></label><input type="checkbox" name="shoe"> Snowshoeing</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Info</legend>
+            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required class="userInfo"></label>
+            <br>
+            <label><span>Card Number: </span><input type="number" name="card" placeholder="" required pattern="[0-9.]{16}" class="userInfo"></label>
+            <br>
+            <label><span>CVV: </span><input type="number" name="cvv" placeholder="" required pattern="[0-9.]{3}" class="userInfo"></label>
+            <br>
+            <label><span>Billing address same as personal info? </span>
+                <input type="radio" name="name" placeholder="full name" required> Yes
+                <input type="radio" name="name" placeholder="full name" required> No</label>
             <br>
         </fieldset>
 
         <fieldset>
-            <legend>Additional Info</legend>
-
-            <label><span>Resort: </span><input type="text" name="resort" placeholder="resort name" required></label>
+            <legend>Additional Notes</legend>
+            <label><span>Please leave any additional notes for your travel agent, so that you can have the best trip possible!</span></label>
             <br>
-            <label><span>Number of Guests: </span><input type="number" name="guests" placeholder="" min="0" max="50" required></label>
-            
-            <br>
-            <label><span>Days Visiting: </span><input type="number" name="address" placeholder="" required></label>
-            <br>
+            <textarea name="notes" class="userInfo">type note here</textarea>
         </fieldset>
 
-
-        <input type="submit" name="submit" >
+        <input type="submit" name="submit" value="Confirm Booking" class="bookButton">
     </form>
     
 </main>
