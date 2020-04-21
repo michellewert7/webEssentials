@@ -26,7 +26,7 @@
 <main>
     <h1>Booking</h1>
     
-    <form method="POST" enctype="multipart/form-data" name="book" class="booking"> 
+    <form action="FormToEmail.php" method="POST" enctype="multipart/form-data" name="book" class="booking"> 
     
         <fieldset>
             <legend>Personal Info</legend>
@@ -139,7 +139,7 @@
             <textarea name="notes" class="userInfo">type note here</textarea>
         </fieldset>
 
-        <input type="submit" name="submit" value="Confirm Booking" class="bookButton">
+        <input type="submit" value="Confirm Booking" class="bookButton">
 
         <input type="hidden" name="subject" value="Conference Registration">
         <input type="hidden" name="redirect" value="thanks.html">
