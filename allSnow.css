@@ -41,15 +41,19 @@ header {
     width: 100%;
 }
 
+header img {
+    width: 20px;
+}
+
 header h1 {
-    background-color: #CBE2F0;
+    /* background-color: #CBE2F0; */
     padding: 1rem 0 0 4.5rem;
     font-size: 1.75rem;
     color: white;
 }
 
 header h2 {
-    background-color: #CBE2F0;
+    /* background-color: #CBE2F0; */
     padding-left: 4.5rem;
     font-size: .86rem;
     letter-spacing: 2px;
@@ -68,9 +72,6 @@ header h2 {
     nav ul.menu{
         list-style-type: none;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex: start;
     }
 
     nav ul.menu li a {
@@ -107,7 +108,7 @@ header h2 {
         background-color: #CBE2F0;
         border-top: solid 1px #CBE2F0;
         border-bottom: solid 1px #ffffff;
-        background: linear-gradient(to bottom, #CBE2F0 0%, #fff 100%); */
+        background: linear-gradient(to bottom, #CBE2F0 0%, #fff 100%);
     }
 
     nav ul.menu {
