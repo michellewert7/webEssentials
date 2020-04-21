@@ -17,27 +17,40 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: black;
-    background-color: white;
+    background-color: #6B7D82;
+    background-image: url(allSnowImages/background.gif);
+    background-repeat: repeat-x;
+}
+
+/* wrapper */
+
+div#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #777;
 }
 
 /* header */
 
 header {
     background-color: #CBE2F0;
-    position: fixed;
+    background-image: url(allSnowImages/logo.png);
+    background-repeat: no-repeat;
+    background-position: 2%;
+    /* position: fixed; */
     width: 100%;
 }
 
 header h1 {
     background-color: #CBE2F0;
-    padding: 1rem 0 0 2%;
+    padding: 1rem 0 0 4.5rem;
     font-size: 1.75rem;
     color: white;
 }
 
 header h2 {
     background-color: #CBE2F0;
-    padding-left: 2%;
+    padding-left: 4.5rem;
     font-size: .86rem;
     letter-spacing: 2px;
     color: white;
@@ -45,53 +58,94 @@ header h2 {
 }
 
 /* navigation */
+/* phone nav */
+@media only screen and (max-width:600px) {
+    nav {
+      background-color: #CBE2F0;
+      padding: .5rem 2%;
+    }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
-    top: 82px;
-    width: 100%;
-    background-color: #CBE2F0;
-    border-top: solid 1px #CBE2F0;
-    border-bottom: solid 1px #ffffff;
-}
+    nav ul.menu{
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex: start;
+    }
 
-nav ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    nav ul.menu li a {
+        padding: .2rem 1rem;
+        margin-bottom: .5rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: #6B7D82;
+        display: block;
+        border-radius: .5rem;
+    }
 
-nav ul.menu li {
-    float: left;
-}
+    nav ul.menu li a:hover {
+        background-color: #fff;
 
-nav ul.menu li a {
-    display: block;
-    padding: .5rem 1.5rem;
-    text-decoration: none;
-    color: #6B7D82;
-}
+    }
 
-nav ul.menu li a:hover {
-    background-color: white;
-    color: #000;
-    border-bottom: solid 3px #6B7D82;
+    nav ul.menu li.active a {
+        background-color: white;
+        color: #000;
+    }
 }
+/* phone nav ends here */
 
-nav ul.menu li.active a{
-    background-color:#6B7D82;
-    color: white;
-    border-bottom: solid 3px white;
+/* desktop nav */
+@media only screen and (min-width:601px) {
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* position: fixed; */
+        top: 82px;
+        width: 100%;
+        background-color: #CBE2F0;
+        border-top: solid 1px #CBE2F0;
+        border-bottom: solid 1px #ffffff;
+        background: linear-gradient(to bottom, #CBE2F0 0%, #fff 100%); */
+    }
+
+    nav ul.menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul.menu li {
+        float: left;
+    }
+
+    nav ul.menu li a {
+        display: block;
+        padding: .5rem 1.5rem;
+        text-decoration: none;
+        color: #6B7D82;
+    }
+
+    nav ul.menu li a:hover {
+        background-color: white;
+        color: #000;
+        border-bottom: solid 3px #6B7D82;
+    }
+
+    nav ul.menu li.active a{
+        background-color:#6B7D82;
+        color: white;
+        border-bottom: solid 3px white;
+    }
 }
+/* desktop nav ends here */
 
 /* main */
 
 main {
     padding: 1rem;
-    padding-top: 140px;
+    /* padding-top: 140px; */
     background-color: #FFFFFF;
 }
 
@@ -140,15 +194,15 @@ main a:hover {
 
 main ul.check, main ul.cloud {
     margin: 0 0 .8rem 0;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 2rem;
 }
 
 main ul.check {
-    list-style-type: square;
+    list-style-image: url(allSnowImages/pin.png);
 }
 
 main ul.cloud {
-    list-style-type: circle;
+    list-style-image: url(allSnowImages/cloud.png);
 }
 
 main dl dt {
