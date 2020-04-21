@@ -1,42 +1,46 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="allSnow.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<title>Booking: All Snow</title>
+    <link rel="stylesheet" href="allSnow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Booking: All Snow</title>
 </head>
-    
+
 <body>
-<header>
-    <h1 id="allSnow">All Snow</h1>
-    <h2>Your first stop for all things snow!</h2>
-</header>
-    
-<nav>
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="snowConditions.html">Snow Conditions</a></li>
-        <li><a href="resorts.html">Resorts</a></li>
-        <li class="active"><a href="booking.html">Booking</a></li>
-    </ul>
-    <div class="keepOpen"></div>
-</nav>
-    
-<main>
-    <h1>Booking</h1>
-    
-    <form action="FormToEmail.php" method="POST" enctype="multipart/form-data" name="book" class="booking"> 
-    
-        <fieldset>
-            <legend>Personal Info</legend>
-            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required class="userInfo"></label>
-            <br>
-            <label><span>Email: </span><input type="email" name="email" placeholder="email@email.com" class="userInfo"></label>
-            <br>
-            <label><span>Address: </span><input type="text" name="address" placeholder="123 Adam St" required class="userInfo"></label>
-            <br>
-            <span>State: </span>
+    <header>
+        <h1 id="allSnow">All Snow</h1>
+        <h2>Your first stop for all things snow!</h2>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="snowConditions.html">Snow Conditions</a></li>
+            <li><a href="resorts.html">Resorts</a></li>
+            <li class="active"><a href="booking.html">Booking</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+    </nav>
+
+    <main>
+        <h1>Booking</h1>
+
+        <form action="FormToEmail.php" method="POST" enctype="multipart/form-data" name="book" class="booking">
+
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required
+                        class="userInfo"></label>
+                <br>
+                <label><span>Email: </span><input type="email" name="email" placeholder="email@email.com"
+                        class="userInfo"></label>
+                <br>
+                <label><span>Address: </span><input type="text" name="address" placeholder="123 Adam St" required
+                        class="userInfo"></label>
+                <br>
+                <span>State: </span>
                 <select class="userInfo">
                     <option>select one</option>
                     <option>Alabama</option>
@@ -88,67 +92,75 @@
                     <option>Wisconsin</option>
                     <option>Wyoming</option>
                 </select>
-            <br>
-            <label><span>Zip Code: </span><input type="number" name="zip" placeholder="zip code" required class="userInfo"></label>
-            <br>
-            <label><span>Phone: </span><input type="tel" name="phone" placeholder="123-456-7890" required pattern="[0-9.]{10,14}" class="userInfo"></label>
-            <br>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Your Trip</legend>
-
-            <label><span>Resort: </span><input type="text" name="resort" placeholder="resort name" required class="userInfo"></label>
-            <br>
-            <label><span>Number of Guests: </span><input type="number" name="guests" required class="userInfo"></label>
-            <br>
-            <label><span>Arrival Date: </span><input type="date" name="date"  required class="userInfo"></label>
-            <br>
-            <label><span>Departure Date: </span><input type="date" name="date" required class="userInfo"></label>
-            <br>
-            <span>Select activities of interest: </span>
-                <label><input type="checkbox" name="downhill" > Downhill Skiing</label>
                 <br>
-                <label><input type="checkbox" name="sledding" > Sledding</label>
+                <label><span>Zip Code: </span><input type="number" name="zip" placeholder="zip code" required
+                        class="userInfo"></label>
+                <br>
+                <label><span>Phone: </span><input type="tel" name="phone" placeholder="123-456-7890" required
+                        pattern="[0-9.]{10,14}" class="userInfo"></label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Trip</legend>
+
+                <label><span>Resort: </span><input type="text" name="resort" placeholder="resort name" required
+                        class="userInfo"></label>
+                <br>
+                <label><span>Number of Guests: </span><input type="number" name="guests" required
+                        class="userInfo"></label>
+                <br>
+                <label><span>Arrival Date: </span><input type="date" name="date" required class="userInfo"></label>
+                <br>
+                <label><span>Departure Date: </span><input type="date" name="date" required class="userInfo"></label>
+                <br>
+                <span>Select activities of interest: </span>
+                <label><input type="checkbox" name="downhill"> Downhill Skiing</label>
+                <br>
+                <label><input type="checkbox" name="sledding"> Sledding</label>
                 <br>
                 <label><input type="checkbox" name="park"> Terrain Park</label>
                 <br>
                 <label><input type="checkbox" name="lessons"> Ski/Board Lessons</label>
                 <br>
                 <label><input type="checkbox" name="shoe"> Snowshoeing</label>
-        </fieldset>
+            </fieldset>
 
-        <fieldset>
-            <legend>Payment Info</legend>
-            <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required class="userInfo"></label>
-            <br>
-            <label><span>Card Number: </span><input type="number" name="card" placeholder="" required pattern="[0-9.]{16}" class="userInfo"></label>
-            <br>
-            <label><span>CVV: </span><input type="number" name="cvv" placeholder="" required pattern="[0-9.]{3}" class="userInfo"></label>
-            <br>
-            <span>Billing address same as personal info? </span>
+            <fieldset>
+                <legend>Payment Info</legend>
+                <label><span>Full Name: </span><input type="text" name="name" placeholder="full name" required
+                        class="userInfo"></label>
+                <br>
+                <label><span>Card Number: </span><input type="number" name="card" placeholder="" required
+                        pattern="[0-9.]{16}" class="userInfo"></label>
+                <br>
+                <label><span>CVV: </span><input type="number" name="cvv" placeholder="" required pattern="[0-9.]{3}"
+                        class="userInfo"></label>
+                <br>
+                <span>Billing address same as personal info? </span>
                 <input type="radio" name="name" placeholder="full name" required> Yes
                 <input type="radio" name="name" placeholder="full name" required> No
-            <br>
-        </fieldset>
+                <br>
+            </fieldset>
 
-        <fieldset>
-            <legend>Additional Notes</legend>
-            <label><span>Please leave any additional notes for your travel agent, so that you can have the best trip possible!</span></label>
-            <br>
-            <textarea name="notes" class="userInfo">type note here</textarea>
-        </fieldset>
+            <fieldset>
+                <legend>Additional Notes</legend>
+                <label><span>Please leave any additional notes for your travel agent, so that you can have the best trip
+                        possible!</span></label>
+                <br>
+                <textarea name="notes" class="userInfo">type note here</textarea>
+            </fieldset>
 
-        <input type="submit" value="Confirm Booking" class="bookButton">
+            <input type="submit" value="Confirm Booking" class="bookButton">
 
-        <input type="hidden" name="subject" value="Conference Registration">
-        <input type="hidden" name="redirect" value="thanks.html">
+            <input type="hidden" value="Conference Registration" name="subject">
+            <input name="redirect" type="hidden" value="thanks.html">
+        </form>
+    </main>
 
-    </form>
-</main>
-    
-<footer>
-    <p>&copy; 2020 &bull; Michelle W Design &bull; Built by Michelle Wert</p>
-</footer>
+    <footer>
+        <p>&copy; 2020 &bull; Michelle W Design &bull; Built by Michelle Wert</p>
+    </footer>
 </body>
+
 </html>
