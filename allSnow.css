@@ -41,10 +41,6 @@ header {
     width: 100%;
 }
 
-header img {
-    width: 20px;
-}
-
 header h1 {
     /* background-color: #CBE2F0; */
     padding: 1rem 0 0 4.5rem;
@@ -190,6 +186,17 @@ main a {
 main a:hover {
     color: #516D57;
 }
+
+/* map */
+
+iframe.mymap {
+    border: 1px solid #6B7D82;
+    width: 95%;
+    margin-left: 2%;
+    height: 500px;
+}
+
+
 
 /* lists */
 
