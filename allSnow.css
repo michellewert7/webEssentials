@@ -186,6 +186,45 @@ main a:hover {
     color: #516D57;
 }
 
+/* table */
+
+table.pricing {
+    border-collapse: collapse;
+    font-size: .8rem;
+    border: 1px solid #9EB59D;
+    margin: 0 1% 1rem 1%;
+}
+
+table.pricing th {
+    text-align: left;
+    background-color: #CBE2F0;
+    color: #6B7D82;
+    font-size: 1.5rem;
+    padding: .1rem .5rem;
+}
+
+table.pricing td {
+    padding: .5rem;
+}
+
+table.pricing tr:nth-child(even) {
+    background-color: #6B7D82;
+}
+
+table.pricing tr:hover {
+    background-color: #9EB59D;
+}
+
+/* video */
+
+iframe.video {
+    width: 98%;
+    margin-left: 1%;
+    height: 320px;
+    margin-bottom: 1rem;
+
+}
+
 /* map */
 
 iframe.mymap {
