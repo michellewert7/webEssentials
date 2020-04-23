@@ -36,8 +36,7 @@ header {
     background-color: #CBE2F0;
     background-image: url(allSnowImages/logo.png);
     background-repeat: no-repeat;
-    background-position: 2%;
-    /* position: fixed; */
+    background-size: 65px;
     width: 100%;
 }
 
